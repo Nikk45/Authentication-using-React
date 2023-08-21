@@ -1,38 +1,142 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #dbf7ff;
+  background-image: url(./images/Background\ Pattern.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url(./images/Background\ Pattern.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom; */
+}
+
+#signup-form {
+  position: relative;
+  display: flex;
+  width: 25%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 3% 2%;
+  border-radius: 8px;
+}
+
+#signup {
+  width: 100%;
+}
+
+.welcome-wish {
+  margin-bottom: 0.5%;
+  color: #333333;
+}
+
+.heading {
+  color: #333333;
+  margin-bottom: 3%;
+}
+
+.label {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.input {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.input input {
+  width: 95%;
+  font-size: 16px;
+  padding: 7px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(200, 199, 199);
+}
+
+#submit-button {
+  width: 99%;
+  padding: 4%;
+  font-weight: 800;
+  background-color: rgb(52, 52, 209);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 4%;
+  cursor: pointer;
+}
+
+.warning-message {
+  text-align: center;
+  color: #ff0000;
+  font-weight: 700;
+}
+
+.success {
+  text-align: center;
+  color: #00ff11;
+  font-weight: 700;
+}
+
+.already-account {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.already-account span {
+  color: #625bf7;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#user-details {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 10px;
+  padding: 3% 2%;
+  border-radius: 8px;
+}
+
+/* Profile.js css style */
+
+.container2 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  gap: 20px;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.section button {
+  background-color: black;
+  color: wheat;
+  margin-left: 10%;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#user-details img{
+    width: 10%;
+    height: 10%;
 }
